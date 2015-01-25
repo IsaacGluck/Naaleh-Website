@@ -1,7 +1,8 @@
 html, body {
-    background: ;
+    background: url(../img/fresh_snow.png) repeat;
 }
 
+/*FONT*/
 h1 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: normal;
@@ -9,7 +10,7 @@ h1 {
     line-height: 46px;
     font-size: 43px;
     margin: 0 0 23px 0;
-    }
+}
 h2 {
     font-family: 'Cantarell', sans-serif;
     font-weight: 700;
@@ -18,10 +19,109 @@ h2 {
     text-transform: uppercase;
     letter-spacing: -1px;
     margin: 0 0 23px 0;
-    }
+}
 p {
     font-family: 'Cantarell', sans-serif;
     font-size: 17px;
     line-height: 23px;
     margin: 0 0 23px 0;
-    }
+}
+a {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+/*RIBBON HEADER - */
+.non-semantic-protector { 
+    position: relative;
+    z-index: 1; 
+}
+
+.ribbon {
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+ width: 35%;
+ position: relative;
+ background: #104D0B;
+ color: #fff;
+ text-align: center;
+ padding: .2em .1em; /* Adjust to suit */
+ margin: .8em auto 1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -.4em;
+ border: .7em solid #10640F;
+ z-index: -1;
+}
+
+.ribbon:before {
+ left: -.9em;
+ border-right-width: 1.2em;
+ border-left-color: transparent;
+}
+
+.ribbon:after {
+ right: -.9em;
+ border-left-width: 1.2em;
+ border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #033E04 transparent transparent transparent;
+ bottom: -.4em;
+}
+
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: .4em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: .4em 1em 0 0;
+}
+/*END OF RIBBON HEADER*/
+
+
+/*NAVBAR*/
+.nav {
+    background-color: #483110;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav a{
+    font-size: 19px;
+    color: white;
+    display: block;
+    padding: 8px 8px;
+}
+
+.nav a:visited {
+    color: white;
+}
+
+.nav a:hover {
+    color: #10640F;
+}
+/*END NAVBAR*/
