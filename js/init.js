@@ -1,3 +1,3 @@
 skel.init({
-  containers: '80%',
+  containers: '75%',
 });

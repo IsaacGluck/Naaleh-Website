@@ -111,10 +111,9 @@ a {
 }
 
 .nav a{
-    font-size: 19px;
     color: white;
     display: block;
-    padding: 8px 8px;
+    padding: 8px 13px;
 }
 
 .nav a:visited {
@@ -125,3 +124,10 @@ a {
     color: #10640F;
 }
 /*END NAVBAR*/
+
+/*CONTENT*/
+.green {
+    background-color: #10640F;
+    margin-left: 0;
+}
+/*END CONTENT*/
