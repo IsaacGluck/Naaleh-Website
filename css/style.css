@@ -8,14 +8,14 @@ h1 {
     font-weight: normal;
     text-transform: uppercase;
     line-height: 46px;
-    font-size: 43px;
+    font-size: 50px;
     margin: 0 0 23px 0;
 }
 h2 {
     font-family: 'Cantarell', sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 23px;
+    line-height: 30px;
     text-transform: uppercase;
     letter-spacing: -1px;
     margin: 0 0 23px 0;
@@ -36,21 +36,20 @@ a {
     text-decoration: none;
 }
 
-/*RIBBON HEADER - */
+/*RIBBON HEADER - http://css-tricks.com/snippets/css/ribbon */
 .non-semantic-protector { 
     position: relative;
     z-index: 1; 
 }
 
 .ribbon {
- /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
  width: 35%;
  position: relative;
  background: #104D0B;
  color: #fff;
  text-align: center;
- padding: .2em .1em; /* Adjust to suit */
- margin: .8em auto 1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+ padding: .2em .1em;
+ margin: .8em auto 1em;
 }
 
 .ribbon:before, .ribbon:after {
@@ -102,6 +101,7 @@ a {
     display: inline-block;
     text-align: center;
     padding: 0 0 0 0;
+    margin-bottom: 0;
 }
 
 .nav li {
@@ -123,11 +123,51 @@ a {
 .nav a:hover {
     color: #10640F;
 }
+
+/*nav::after {
+    background-color: #10640F;
+    height: 10px;
+}*/
 /*END NAVBAR*/
 
 /*CONTENT*/
+.top {
+    padding: 10px 20px 0px 20px;
+}
+
+.not-top {
+    padding: 0 20px 0 20px;
+}
+
+.left {
+    border-right: #10640F solid 10px;
+}
+
+.middle {
+    border-right: #10640F solid 10px;
+    border-left: #10640F solid 10px;
+}
+
+.right {
+    border-left: #10640F solid 10px;
+}
+
 .green {
     background-color: #10640F;
-    margin-left: 0;
+}
+
+img {
+    float: left;
+}
+
+.white {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.welcome {
 }
 /*END CONTENT*/
