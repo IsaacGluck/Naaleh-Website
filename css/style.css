@@ -204,10 +204,34 @@ img {
 
 /*CAROUSEL*/
 #carousel{
-    width: 320px;
-    height: 500px; 
-    overflow-x:hidden;
+    height: 320px;
+    width: 500px; 
+    overflow-x: hidden;
+    float: left;
 }
 
+#track{
+    width:1500px;
+    position:relative;
+}
+
+#track div{
+    height: 320px;
+    width: 500px; 
+    float:left;
+    position:relative;
+}
+
+.pic1 {
+    background-image: url(../img/naaleh.jpg);
+}
+
+div.blue{
+    background:blue;
+}
+
+div.yellow{
+    background:yellow;
+}
 /*END CAROUSEL*/
 /*END CONTENT*/
