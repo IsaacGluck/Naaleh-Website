@@ -12,10 +12,6 @@
 	<!--[if lt IE 7]>
 		<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- JQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script> <!-- Backstretch -->
-
-
 	<script src="js/skel.min.js"></script> <!-- Skel -->
 	<script src="js/init.js"></script> <!-- Skel Init Function -->
 	<link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" /> <!-- Fonts -->
@@ -41,6 +37,10 @@
 					<ul>
 						<li><a href="#">Parents 1</a></li>
 						<li><a href="#">Parents 2</a></li>
+						<li><a href="#">Parents 3</a></li>
+						<li><a href="#">Parents 4</a></li>
+						<li><a href="#">Parents 5</a></li>
+						<li><a href="#">Parents 6</a></li>
 					</ul>
 				</li>
 				<li>
@@ -48,26 +48,43 @@
 					<ul>
 						<li><a href="#">Campers 1</a></li>
 						<li><a href="#">Campers 2</a></li>
+						<li><a href="#">Campers 3</a></li>
+						<li><a href="#">Campers 4</a></li>
+						<li><a href="#">Campers 5</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Staff</a></li>
+				<li>
+					<a href="#">Staff</a>
+					<ul>
+						<li><a href="#">Staff 1</a></li>
+						<li><a href="#">Staff 2</a></li>
+						<li><a href="#">Staff 3</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Contact</a></li>
-				<li><a href="#">Friends</a></li>
+				<li>
+					<a href="#">Friends</a>
+					<ul>
+						<li><a href="#">Friends 1</a></li>
+						<li><a href="#">Friends 2</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Year Round</a></li>
 			</ul>
 		</nav>
 
 		<div class="row top green">
 			<div class="12u$ white welcome">
-				<div id="carousel">
-    				<div id="track">
-				        <div><img class="pic1" src="img/naaleh.jpg" height="320" width="480"></div>
-				        <div class="blue"></div>
-				        <div class="yellow"></div>
-				    </div>
-				</div>
-				<h1>Welcome</h1>
-				<h2>Located in Bainbridge New York Camp Na'aleh helps foster Jewish values through progressive eductation in a fun and unique way</h2>
+				<!-- <div class="6u"> -->
+			        <div class="pic1 carousel only-large">
+			        	<!-- <img src="img/naaleh.jpg"> -->
+			        	<!-- height="320" width="480" -->
+			        </div>
+				<!-- </div> -->
+				<!-- <div class="6u$"> -->
+					<h1>Welcome</h1>
+					<h2>Located in Bainbridge New York Camp Na'aleh helps foster Jewish values through progressive eductation in a fun and unique way</h2>
+				<!-- </div> -->
 			</div>
 		</div>
 		<div class="row not-top green">	
@@ -86,6 +103,19 @@
 			</div>
 		</div>	
 	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script> <!-- Backstretch -->
+	<script type="text/javascript">
+		$.backstretch("../Naaleh-Website/img/background.png");
+
+		$('.pic1').backstretch([
+      "../Naaleh-Website/img/naaleh.jpg"
+    , "../Naaleh-Website/img/naaleh.jpg"
+    , "http://dl.dropbox.com/u/515046/www/cheers.jpg"
+  ], {duration: 3000, fade: 750});
+	</script>
 
 </body>
 </html>

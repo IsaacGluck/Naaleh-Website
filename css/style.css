@@ -1,5 +1,5 @@
-html, body {
-    background: url(../img/background.png);
+body {
+    background: url(../img/background.png) no-repeat;
 }
 
 /*FONT*/
@@ -103,7 +103,7 @@ a {
     padding: 0 0 0 0;
     margin-bottom: 0;
     position: relative;
-    z-index: 5;
+    z-index: 1;
 }
 
 .nav li {
@@ -133,6 +133,7 @@ a {
     list-style: none;
     position: absolute;
     left: -9999px;
+    z-index: 2;
 }
 
 .nav ul li{
@@ -174,20 +175,20 @@ a {
 }
 
 .left {
-    border-right: #10640F solid 10px;
+    border-right: rgba(16,100,15, 1) solid 10px;
 }
 
 .middle {
-    border-right: #10640F solid 10px;
-    border-left: #10640F solid 10px;
+    border-right: rgba(16,100,15, 1) solid 10px;
+    border-left: rgba(16,100,15, 1) solid 10px;
 }
 
 .right {
-    border-left: #10640F solid 10px;
+    border-left: rgba(16,100,15, 1) solid 10px;
 }
 
 .green {
-    background-color: #10640F;
+    background-color: rgba(16,100,15, 1);
 }
 
 img {
@@ -195,7 +196,7 @@ img {
 }
 
 .white {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1);
     text-align: center;
     padding: 10px;
     margin-top: 10px;
@@ -203,31 +204,11 @@ img {
 }
 
 /*CAROUSEL*/
-#carousel{
-    height: 320px;
-    width: 500px; 
-    overflow-x: hidden;
+.carousel{
+    height: 20em; /* WAS 320px*/
+    width: 31em; /*WAS 500px*/
     float: left;
 }
-
-#track{
-    width:1500px;
-    position:relative;
-}
-
-#track div{
-    height: 320px;
-    width: 500px; 
-    float:left;
-    position:relative;
-}
-
-div.blue{
-    background:blue;
-}
-
-div.yellow{
-    background:yellow;
-}
 /*END CAROUSEL*/
+
 /*END CONTENT*/
