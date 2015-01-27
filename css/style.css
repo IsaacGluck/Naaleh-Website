@@ -1,5 +1,5 @@
 html, body {
-    background: url(../img/fresh_snow.png) repeat;
+    background: url(../img/background.png);
 }
 
 /*FONT*/
@@ -220,10 +220,6 @@ img {
     width: 500px; 
     float:left;
     position:relative;
-}
-
-.pic1 {
-    background-image: url(../img/naaleh.jpg);
 }
 
 div.blue{
