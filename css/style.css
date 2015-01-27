@@ -36,7 +36,7 @@ a {
     text-decoration: none;
 }
 
-/*RIBBON HEADER - http://css-tricks.com/snippets/css/ribbon */
+/*RIBBON HEADER Inspired by - http://css-tricks.com/snippets/css/ribbon */
 .non-semantic-protector { 
     position: relative;
     z-index: 1; 
@@ -127,7 +127,7 @@ a {
     color: #10640F;
 }
 
-/*DROPDOWN*/
+/*DROPDOWN Inspired by - http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/*/
 .nav ul {
     background: rgba(255,255,255,0);
     list-style: none;
@@ -150,6 +150,10 @@ a {
 
 .nav li:hover a {
     background: #483110;
+}
+
+.nav ul li a {
+    border-top: 1px solid #fff;
 }
 
 .nav li:hover ul a {
@@ -198,6 +202,12 @@ img {
     margin-bottom: 10px;
 }
 
-.welcome {
+/*CAROUSEL*/
+#carousel{
+    width: 320px;
+    height: 500px; 
+    overflow-x:hidden;
 }
+
+/*END CAROUSEL*/
 /*END CONTENT*/
