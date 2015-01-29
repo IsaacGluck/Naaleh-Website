@@ -1,0 +1,213 @@
+body {
+    background: url(../img/background.png) no-repeat;
+}
+
+/*FONT*/
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 50px;
+    margin: 0 0 23px 0;
+}
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 0 23px 0;
+}
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+}
+a {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+/*RIBBON HEADER Inspired by - http://css-tricks.com/snippets/css/ribbon */
+.non-semantic-protector { 
+    position: relative;
+    z-index: 1; 
+}
+
+.ribbon {
+ width: 35%;
+ position: relative;
+ background: #104D0B;
+ color: #fff;
+ text-align: center;
+ padding: .2em .1em;
+ margin: .8em auto 1em;
+}
+
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -.4em;
+ border: .7em solid #10640F;
+ z-index: -1;
+}
+
+.ribbon:before {
+ left: -.9em;
+ border-right-width: 1.2em;
+ border-left-color: transparent;
+}
+
+.ribbon:after {
+ right: -.9em;
+ border-left-width: 1.2em;
+ border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #033E04 transparent transparent transparent;
+ bottom: -.4em;
+}
+
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: .4em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: .4em 1em 0 0;
+}
+/*END OF RIBBON HEADER*/
+
+
+/*NAVBAR*/
+.nav {
+    background-color: #483110;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0 0 0 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 5;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.nav a{
+    color: white;
+    display: block;
+    padding: 8px 13px;
+}
+
+.nav a:visited {
+    color: white;
+}
+
+.nav a:hover {
+    color: #10640F;
+}
+
+/*DROPDOWN Inspired by - http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/*/
+.nav ul {
+    background: rgba(255,255,255,0);
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+}
+
+.nav ul li{
+    padding-top: 0px;
+    float: none;
+}
+
+.nav ul a{
+    white-space: nowrap;
+}
+
+.nav li:hover ul {
+    left: 0;
+}
+
+.nav li:hover a {
+    background: #483110;
+}
+
+.nav ul li a {
+    border-top: 1px solid #fff;
+}
+
+.nav li:hover ul a {
+    text-decoration: none;
+}
+
+/*END DROPDOWN*/
+
+/*END NAVBAR*/
+
+/*CONTENT*/
+.top {
+    padding: 10px 20px 0px 20px;
+}
+
+.not-top {
+    padding: 0 20px 0 20px;
+}
+
+.left {
+    border-right: rgba(16,100,15, 1) solid 10px;
+}
+
+.middle {
+    border-right: rgba(16,100,15, 1) solid 10px;
+    border-left: rgba(16,100,15, 1) solid 10px;
+}
+
+.right {
+    border-left: rgba(16,100,15, 1) solid 10px;
+}
+
+.green {
+    background-color: rgba(16,100,15, 1);
+}
+
+img {
+    float: left;
+}
+
+.white {
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*CAROUSEL*/
+.carousel{
+    height: 0; /* WAS 320px*/
+    width: 0; /*WAS 500px*/
+    float: left;
+}
+/*END CAROUSEL*/
+
+/*END CONTENT*/
