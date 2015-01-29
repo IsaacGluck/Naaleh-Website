@@ -203,6 +203,8 @@ img {
     margin-bottom: 10px;
 }
 
+.overlay {}
+
 /*CAROUSEL*/
 .carousel{
     height: 20em; /* WAS 320px*/
