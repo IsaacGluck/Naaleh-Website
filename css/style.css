@@ -203,7 +203,20 @@ img {
     margin-bottom: 10px;
 }
 
-.overlay {}
+/* LINK OVERLAY*/
+.overlay {
+    float: left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.overlay:hover {
+    -webkit-filter: grayscale(100%);
+}
+/* END LINK OVERLAY*/
 
 /*CAROUSEL*/
 .carousel{

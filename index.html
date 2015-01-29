@@ -14,10 +14,10 @@
 
 	<script src="js/skel.min.js"></script> <!-- Skel -->
 	<script src="js/init.js"></script> <!-- Skel Init Function -->
+	
 	<link href="http://fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" /> <!-- Fonts -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" /> <!-- Main Styling -->
 
-	<!-- <script src="js/carousel.js"></script>  Script for Carousel -->
 </head>
  
 <body id="index" class="home">
@@ -75,16 +75,10 @@
 
 		<div class="row top green">
 			<div class="12u$ white welcome">
-				<!-- <div class="6u"> -->
-			        <div class="pic1 carousel only-large">
-			        	<!-- <img src="img/naaleh.jpg"> -->
-			        	<!-- height="320" width="480" -->
-			        </div>
-				<!-- </div> -->
-				<!-- <div class="6u$"> -->
-					<h1>Welcome</h1>
-					<h2>Located in Bainbridge New York Camp Na'aleh helps foster Jewish values through progressive eductation in a fun and unique way</h2>
-				<!-- </div> -->
+		        <div class="carousel only-large">
+		        </div>
+				<h1>Welcome</h1>
+				<h2>Located in Bainbridge New York Camp Na'aleh helps foster Jewish values through progressive education in a fun and unique way</h2>
 			</div>
 		</div>
 		<div class="row not-top green">	
@@ -95,9 +89,21 @@
 						<img src="img/02_facebook.png"/>
 					</div>
 				</a>
-				<a href="https://www.youtube.com/user/Campnaaleh/videos"><img src="img/03_youtube.png" height="128" width="128"></a>
-				<a href="https://twitter.com/campnaaleh"><img src="img/01_twitter.png" height="128" width="128"></a>
-				<a href="http://naaleh.tumblr.com/"><img src="img/15_tumblr.png" height="128" width="128"></a>
+				<a href="https://www.youtube.com/user/Campnaaleh/videos">
+					<div class="overlay">
+						<img src="img/03_youtube.png" height="128" width="128">
+					</div>
+				</a>
+				<a href="https://twitter.com/campnaaleh">
+					<div class="overlay">
+						<img src="img/01_twitter.png" height="128" width="128">
+					</div>
+				</a>
+				<a href="http://naaleh.tumblr.com/">
+					<div class="overlay">
+						<img src="img/15_tumblr.png" height="128" width="128">
+					</div>
+				</a>
 			</div>
 			<div class="4u white middle">
 				<h2>News and Events</h2>
@@ -114,10 +120,10 @@
 		var clock = document.getElementById("countdown-holder")
 		, targetDate = new Date(2015, 07, 28); // June 28, 2015
 
-		clock.innerHTML = countdown(targetDate).toString();
+		clock.innerHTML = countdown(null, targetDate, ~(countdown.YEARS|countdown.MILLISECONDS|countdown.MINUTES|countdown.SECONDS)).toString();
 		setInterval(function(){
 			clock.innerHTML = countdown(targetDate).toString();
-		}, 1000);
+		}, 36000);
 	</script>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- JQuery -->
@@ -125,16 +131,15 @@
 	<script type="text/javascript">
 		$.backstretch("../Naaleh-Website/img/background.png");
 
-		$('.pic1').backstretch([
+		$('.carousel').backstretch([
 			"../Naaleh-Website/img/naaleh.jpg",
-			// , "../Naaleh-Website/img/naaleh2.jpg"
 			"../Naaleh-Website/img/naaleh3.jpg", 
 			"../Naaleh-Website/img/naaleh6.jpg", 
 			"../Naaleh-Website/img/naaleh8.jpg", 
 			"../Naaleh-Website/img/naaleh4.jpg", 
 			"../Naaleh-Website/img/naaleh5.jpg", 
 			"../Naaleh-Website/img/naaleh7.jpg" 
-			], {duration: 3000, fade: 750});
+			], {duration: 3000, fade: 1000});
 	</script>
 
 </body>
