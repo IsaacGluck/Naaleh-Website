@@ -3,36 +3,31 @@ body {
 }
 
 /*FONT*/
+@font-face {
+    font-family: 'Futura Book';
+    src: url('../fonts/FUTURA_BOOK.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Medium';
+    src: url('../fonts/FUTURA_MEDIUM.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Heavy';
+    src: url('../fonts/FUTURA_HEAVY.ttf');
+}
+
 h1 {
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    line-height: 46px;
-    font-size: 50px;
-    margin: 0 0 23px 0;
+    font-family: 'Futura Book', sans-serif;
 }
-h2 {
-    font-family: 'Cantarell', sans-serif;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 30px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    margin: 0 0 23px 0;
+
+h2, h3, h4, h5, h6, p{
+    font-family: 'Futura Medium', sans-serif;
 }
-p {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 17px;
-    line-height: 23px;
-    margin: 0 0 23px 0;
-}
+
 a {
-    font-family: 'Cantarell', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
+    font-family: 'Futura Medium', sans-serif;
     text-decoration: none;
 }
 
@@ -43,53 +38,55 @@ a {
 }
 
 .ribbon {
- width: 35%;
- position: relative;
- background: #104D0B;
- color: #fff;
- text-align: center;
- padding: .2em .1em;
- margin: .8em auto 1em;
+    font-family: 'Futura Heavy';
+    font-size: 40px;
+    width: 35%;
+    position: relative;
+    background: #104D0B;
+    color: #fff;
+    text-align: center;
+    padding: .2em .1em;
+    margin: .8em auto 1em;
 }
 
 .ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -.4em;
- border: .7em solid #10640F;
- z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -.4em;
+    border: .7em solid #10640F;
+    z-index: -1;
 }
 
 .ribbon:before {
- left: -.9em;
- border-right-width: 1.2em;
- border-left-color: transparent;
+    left: -.9em;
+    border-right-width: 1.2em;
+    border-left-color: transparent;
 }
 
 .ribbon:after {
- right: -.9em;
- border-left-width: 1.2em;
- border-right-color: transparent;
+    right: -.9em;
+    border-left-width: 1.2em;
+    border-right-color: transparent;
 }
 
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #033E04 transparent transparent transparent;
- bottom: -.4em;
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #033E04 transparent transparent transparent;
+    bottom: -.4em;
 }
 
 .ribbon .ribbon-content:before {
- left: 0;
- border-width: .4em 0 0 1em;
+    left: 0;
+    border-width: .4em 0 0 1em;
 }
 
 .ribbon .ribbon-content:after {
- right: 0;
- border-width: .4em 1em 0 0;
+    right: 0;
+    border-width: .4em 1em 0 0;
 }
 /*END OF RIBBON HEADER*/
 
@@ -102,8 +99,8 @@ a {
     text-align: center;
     padding: 0 0 0 0;
     margin-bottom: 0;
-    position: relative;
-    z-index: 1;
+    /*position: relative;*/
+    /*z-index: 1;*/
 }
 
 .nav li {
@@ -114,6 +111,8 @@ a {
 }
 
 .nav a{
+    font-family: 'Futura Heavy';
+    font-size: 22px;
     color: white;
     display: block;
     padding: 8px 13px;
@@ -127,7 +126,7 @@ a {
     color: #10640F;
 }
 
-/*DROPDOWN Inspired by - http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/*/
+/* DROPDOWN Inspired by - http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/ */
 .nav ul {
     background: rgba(255,255,255,0);
     list-style: none;
@@ -146,7 +145,7 @@ a {
 }
 
 .nav li:hover ul {
-    left: 0;
+    left: -25px;
 }
 
 .nav li:hover a {
@@ -218,6 +217,13 @@ img {
 }
 /* END LINK OVERLAY*/
 
+
+/* BUFFER */
+.buffer {
+    margin-bottom: 40px;
+}
+/* END BUFFER */
+
 /*CAROUSEL*/
 .carousel{
     height: 20em; /* WAS 320px*/
@@ -227,3 +233,39 @@ img {
 /*END CAROUSEL*/
 
 /*END CONTENT*/
+
+
+
+/*OLD*/
+/*h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 50px;
+    margin: 0 0 23px 0;
+}
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 0 23px 0;
+}
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+}
+a {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-decoration: none;
+}*/
