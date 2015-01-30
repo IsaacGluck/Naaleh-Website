@@ -89,10 +89,21 @@ a {
     right: 0;
     border-width: .4em 1em 0 0;
 }
+
+.semel {
+    margin-top: 50%;
+    height: 40px;
+    width: inherit;
+}
 /*END OF RIBBON HEADER*/
 
 
 /*NAVBAR*/
+#the-sticky-div.sticky {
+    position: fixed;
+    top: 0;
+}
+
 .nav {
     background-color: #483110;
     width: 100%;
@@ -100,8 +111,6 @@ a {
     text-align: center;
     padding: 0 0 0 0;
     margin-bottom: 0;
-    /*position: relative;*/
-    /*z-index: 1;*/
 }
 
 .nav li {
