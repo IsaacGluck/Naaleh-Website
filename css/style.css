@@ -20,6 +20,7 @@ body {
 
 h1 {
     font-family: 'Futura Book', sans-serif;
+    text-transform: uppercase;
 }
 
 h2, h3, h4, h5, h6, p{
@@ -205,11 +206,11 @@ img {
 /* LINK OVERLAY*/
 .overlay {
     float: left;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    transition: all 0.75s ease;
 }
 
 .overlay:hover {
