@@ -121,13 +121,14 @@
 		var clock = document.getElementById("countdown-holder")
 		, targetDate = new Date(2015, 07, 28); // June 28, 2015
 
-		clock.innerHTML = countdown(null, targetDate, ~(countdown.YEARS|countdown.MILLISECONDS|countdown.MINUTES|countdown.SECONDS)).toString();
+		clock.innerHTML = countdown(null, targetDate, countdown.DAYS).toString();
 		setInterval(function(){
 			clock.innerHTML = countdown(targetDate).toString();
 		}, 360000);
 	</script>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- JQuery -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script> <!-- JQuery UI -->
 	<script src="js/nav.js"></script> <!-- Sticky Navbar -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script> <!-- Backstretch -->
 	<script type="text/javascript">

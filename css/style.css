@@ -100,11 +100,11 @@ a {
 
 /*NAVBAR*/
 .sticky {
+    width: 100%;
     z-index: 9;
     position: fixed;
     top: -20px;
     left:0;
-    width: 100%;
 }
 
 .nav {
