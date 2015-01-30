@@ -99,9 +99,12 @@ a {
 
 
 /*NAVBAR*/
-#the-sticky-div.sticky {
+.sticky {
+    z-index: 9;
     position: fixed;
-    top: 0;
+    top: -20px;
+    left:0;
+    width: 100%;
 }
 
 .nav {
@@ -142,7 +145,7 @@ a {
     list-style: none;
     position: absolute;
     left: -9999px;
-    z-index: 2;
+    z-index: 10;
 }
 
 .nav ul li{
