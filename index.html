@@ -14,8 +14,23 @@
 
 	<script src="js/skel.min.js"></script> <!-- Skel -->
 	<script src="js/init.js"></script> <!-- Skel Init Function -->
-	
-	<link rel="stylesheet" href="css/style.css" type="text/css" /> <!-- Main Styling -->
+
+	<script>
+	  
+	  skel.init ({
+          breakpoints: {
+          medium: {
+          media: '(min-width: 768px)',
+          href: 'css/style.css',
+          },
+          small: {
+          media: '(max-width: 768px)',
+          href: 'css/style-phone.css',
+          }
+          }
+	  });
+
+	</script>
 
 </head>
  
@@ -87,27 +102,28 @@
 				<h2>On The Web</h2>
 				<a href="https://www.facebook.com/pages/Camp-Naaleh/115595698456290">
 					<div class="overlay">
-						<img src="img/02_facebook.png"/>
+						<img class="link-image" src="img/02_facebook.png"/>
 					</div>
 				</a>
 				<a href="https://www.youtube.com/user/Campnaaleh/videos">
 					<div class="overlay">
-						<img src="img/03_youtube.png" height="128" width="128">
+						<img class="link-image" src="img/03_youtube.png">
 					</div>
 				</a>
 				<a href="https://twitter.com/campnaaleh">
 					<div class="overlay">
-						<img src="img/01_twitter.png" height="128" width="128">
+						<img class="link-image" src="img/01_twitter.png">
 					</div>
 				</a>
 				<a href="http://naaleh.tumblr.com/">
 					<div class="overlay">
-						<img src="img/15_tumblr.png" height="128" width="128">
+						<img class="link-image" src="img/15_tumblr.png">
 					</div>
 				</a>
 			</div>
 			<div class="4u white middle">
 				<h2>News and Events</h2>
+				<h4 class="news">Item item item item</h4>
 			</div>
 			<div class="4u white right">
 				<h2>Countdown</h2>
