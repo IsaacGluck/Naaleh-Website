@@ -1,0 +1,121 @@
+body {
+    background: url(../img/background.png) no-repeat;
+}
+
+/*FONT*/
+@font-face {
+    font-family: 'Futura Book';
+    src: url('../fonts/FUTURA_BOOK.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Medium';
+    src: url('../fonts/FUTURA_MEDIUM.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Heavy';
+    src: url('../fonts/FUTURA_HEAVY.ttf');
+}
+
+h1 {
+    font-family: 'Futura Book', sans-serif;
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+h2, h3, h4, h5, h6, p{
+    font-family: 'Futura Medium', sans-serif;
+    font-size: 100%;
+}
+
+a {
+    font-family: 'Futura Medium', sans-serif;
+    text-decoration: none;
+}
+
+
+/* NAVBAR */
+.nav {
+    background-color: #483110;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0 0 0 0;
+    margin-bottom: 0;
+    /*position: relative;*/
+    /*z-index: 1;*/
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.nav a{
+    font-family: 'Futura Heavy';
+    font-size: 22px;
+    color: white;
+    display: block;
+    padding: 8px 13px;
+}
+
+.nav a:visited {
+    color: white;
+}
+
+.nav a:hover {
+    color: #10640F;
+}
+
+
+/* LINK OVERLAY*/
+img.link-image {
+    width: 50%;
+    float: right;
+}
+
+.overlay:hover {
+    -webkit-filter: grayscale(100%);
+}
+/* END LINK OVERLAY*/
+
+.right {
+    visibility: hidden;
+}
+
+
+.news {
+    overflow-y: hidden;
+    max-height: 0; /* approximate max height */
+    height: 50px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    
+    -moz-transition-property: all;
+    -moz-transition-duration: .5s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    
+    -ms-transition-property: all;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.opened {
+    max-height: 50px;
+}
+
+.white {
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
