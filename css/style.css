@@ -1,5 +1,6 @@
-body {
+html {
     background: url(../img/background.png) no-repeat;
+    /*background-color: #ebebeb;*/
 }
 
 /*FONT*/
@@ -90,6 +91,15 @@ a {
     border-width: .4em 1em 0 0;
 }
 
+.ribbon-link {
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.ribbon-link:hover {
+    color: #483110
+}
+
 .semel {
     margin-top: 50%;
     height: 40px;
@@ -109,6 +119,13 @@ a {
     margin-top: 0px;
     top: 0;
     height: 50px;
+    z-index: 2;
+    border-radius: 0px;
+}
+
+.container .nav {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .nav {
@@ -118,6 +135,7 @@ a {
     margin-top: 0px;
     display: inline-block;
     text-align: center;
+    letter-spacing: 0.5px;
     padding: 0 0 0 0;
     margin-bottom: 0;
 }
@@ -165,16 +183,16 @@ a {
 }
 
 .nav li:hover ul {
-    left: -26px;
+    left: -40px;
 }
 
 .nav li:hover a {
     background: #483110;
 }
 
-.nav ul li a {
+/*.nav ul li a {
     border-top: 1px solid #fff;
-}
+}*/
 
 .nav li:hover ul a {
     text-decoration: none;
@@ -207,6 +225,8 @@ a {
 
 .green {
     background-color: rgba(16,100,15, 1);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 img {
@@ -245,9 +265,11 @@ img {
 
 /*CAROUSEL*/
 .carousel{
-    height: 20em; /* WAS 320px*/
-    width: 31em; /*WAS 500px*/
-    float: left;
+    height: 26em; /* WAS 320px*/
+    width: 40em; /*WAS 500px*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 /*END CAROUSEL*/
 

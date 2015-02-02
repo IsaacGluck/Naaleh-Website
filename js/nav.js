@@ -6,11 +6,11 @@ $(document).ready(function(){
 	$(window).scroll(function() {
 		// $appear.toggleClass('invisible', $(window).scrollTop() < when_top, 400, 'linear');
 		// $disappear.toggleClass('invisible', $(window).scrollTop() > when_top);
-		if($(this).scrollTop() > $disappear.offset().top + 27) {
-			$appear.fadeIn('100');
+		if($(this).scrollTop() > $disappear.offset().top - 11) {
+			$appear.fadeIn(100);
 		}
 		else {
-			$appear.fadeOut('200');
+			$appear.fadeOut(200);
 		}
 	});
 
