@@ -6,15 +6,15 @@ $(document).ready(function(){
 	$(window).scroll(function() {
 		// $appear.toggleClass('invisible', $(window).scrollTop() < when_top, 400, 'linear');
 		// $disappear.toggleClass('invisible', $(window).scrollTop() > when_top);
-		if($(this).scrollTop() > $disappear.offset().top +27) {
-			$appear.fadeIn(300);
+		if($(this).scrollTop() > $disappear.offset().top + 32) {
+			$appear.fadeIn(30);
 		}
 		else {
-			$appear.fadeOut(300);
+			$appear.fadeOut(150);
 		}
 	});
 
-	$.backstretch("../Naaleh-Website/img/background.png");
+	// $.backstretch("../Naaleh-Website/img/background.png");
 
 	$('.carousel').backstretch([
 		"../Naaleh-Website/img/naaleh.jpg",

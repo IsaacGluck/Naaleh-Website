@@ -1,9 +1,11 @@
 html {
-    background: url(../img/background.png) no-repeat;
-    /*background-color: #ebebeb;*/
+    /*background: url(../img/background.png) no-repeat;*/
+    background-color: #ebebeb;
+    /*background: url(../img/naaleh.jpg) no-repeat;*/
 }
 
 /*FONT*/
+
 @font-face {
     font-family: 'Futura Book';
     src: url('../fonts/FUTURA_BOOK.ttf');
@@ -33,6 +35,7 @@ a {
 }
 
 /*RIBBON HEADER Inspired by - http://css-tricks.com/snippets/css/ribbon */
+
 .non-semantic-protector { 
     position: relative;
     z-index: 2; 
@@ -104,10 +107,12 @@ a {
     height: 40px;
     width: inherit;
 }
+
 /*END OF RIBBON HEADER*/
 
 
 /*NAVBAR*/
+
 .invisible {
     display: none;
 }
@@ -120,6 +125,7 @@ a {
     height: 48px;
     z-index: 2;
     border-radius: 0px;
+    opacity: .95;
 }
 
 .container .nav {
@@ -164,6 +170,7 @@ a {
 }
 
 /* DROPDOWN Inspired by - http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/ */
+
 .nav ul {
     background: rgba(255,255,255,0);
     list-style: none;
@@ -194,11 +201,13 @@ a {
 .nav li:hover ul a {
     text-decoration: none;
 }
+
 /*END DROPDOWN*/
 
 /*END NAVBAR*/
 
 /*CONTENT*/
+
 .top {
     padding: 10px 20px 0px 20px;
 }
@@ -234,6 +243,10 @@ img {
     text-transform: uppercase;
 }
 
+.no-margin.header {
+    margin-top: 0;
+}
+
 .white {
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
@@ -243,6 +256,7 @@ img {
 }
 
 /* LINK OVERLAY*/
+
 .overlay {
     float: left;
     -webkit-transition: all 0.75s ease;
@@ -255,23 +269,29 @@ img {
 .overlay:hover {
     -webkit-filter: grayscale(100%);
 }
+
 /* END LINK OVERLAY*/
 
 
 /* BUFFER */
+
 .buffer {
     margin-bottom: 40px;
 }
+
 /* END BUFFER */
 
 /*CAROUSEL*/
+
 .carousel{
-    height: 26em; /* WAS 320px*/
-    width: 40em; /*WAS 500px*/
-    display: block;
+    height: 340px; /* WAS 320px 26em*/
+    width: 500px; /*WAS 500px 40em*/
+    float: left;
+    /*display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto*/
 }
+
 /*END CAROUSEL*/
 
 /*END CONTENT*/
