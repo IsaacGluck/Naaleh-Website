@@ -1,3 +1,59 @@
+$('.about').hover(function() {
+    $('.about').text('בִּדְבַר');
+});
+
+$('.about').mouseleave(function() {
+    $('.about').text('About');
+});
+
+$('.parents').hover(function() {
+    $(this).text('הורים');
+});
+
+$('.parents').mouseleave(function() {
+    $(this).text('parents');
+});
+
+$('.campers').hover(function() {
+    $(this).text('חניכים');
+});
+
+$('.campers').mouseleave(function() {
+    $(this).text('campers');
+});
+
+$('.staff').hover(function() {
+    $(this).text('צוות');
+});
+
+$('.staff').mouseleave(function() {
+    $(this).text('staff');
+});
+
+$('.contact').hover(function() {
+    $(this).text('קשר');
+});
+
+$('.contact').mouseleave(function() {
+    $(this).text('contact');
+});
+
+$('.friends').hover(function() {
+    $(this).text('חברים');
+});
+
+$('.friends').mouseleave(function() {
+    $(this).text('friends');
+});
+
+$('.year_round').hover(function() {
+    $(this).text('השנה');
+});
+
+$('.year_round').mouseleave(function() {
+    $(this).text('all year');
+});
+
 $(document).ready(function(){
 	var $appear = $('#appear');
 	var	$disappear = $('#disappear');
